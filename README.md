@@ -53,5 +53,6 @@
               description = "public Ip"
               value = aws_instance.ec2_instance.public_ip
           }
-          6. tfvars
-          7. Conditional Expressions
+
+6. tfvars
+7. Conditional Expressions
