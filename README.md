@@ -56,3 +56,6 @@
 
 6. tfvars
 7. Conditional Expressions
+8. State File
+9. Remote Backend
+10. State Locking
