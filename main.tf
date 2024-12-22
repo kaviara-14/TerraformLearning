@@ -9,3 +9,14 @@ module "ec2_instance" {
     instance_type_input = "t2.micro"
     subnet_id_input = "sub1-28993008191"
 }
+
+
+resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
+  name = "terraform-state-lock-dynamo"
+  hash_key = "LockID"
+ 
+  attribute {
+    name = "LockID"
+    type = "S"
+  }
+}
