@@ -5,9 +5,9 @@ provider "aws" {
 
 module "ec2_instance" {
     source = "./modules/ec2_instance"
-    ami_input = "ami-1229930022"
+    ami_input = <your AMI ID>
     instance_type_input = "t2.micro"
-    subnet_id_input = "sub1-28993008191"
+    subnet_id_input = <your subnet ID>
 }
 
 
